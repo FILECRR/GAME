@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAMEOPOLY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+    
+           margin: 0; 
+           padding: 0;
+           box-sizing: border-box;
+           scroll-behavior: smooth ;
+        }
+        header 
+        {
+           background-color: #0c0c0c;
+           width: 100%; /*l3ard */
+           position: fixed;
+           z-index: 999; /* bach mat4atich 3lih chi 7aja */
+           display: flex;
+           justify-content: space-between; /*katdir wa7a espace mabin les element "a":"nav" */
+           align-items: center; 
+           padding: 10px 50px;
+           font-size: small;
+           
+        }
+        .main{
+            width: 100%;
+            padding: 100px 10px;
+            display: flex;
+            align-items: center;
+            background: url(bg.webp) no-repeat ;
+            background-size: cover;/*bach t7at sora kifma hiya*/
+            background-position: 0px 20px;
+            background-attachment: fixed;
+        
+           
+        }
+        i{
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: 500; 
+            /*padding-left: 30px; /*30px dayl espace mabin les link "A"*/
+            transition: 1s ease;
+        }
+        p i {padding-left: 8px;
+        color: #a9a5a5;}
+        i:hover{
+           color: #96b7f5;
+           transform: scale(1.1);
+        }
+        span{
+            color: #96b7f5;
+        }
+       
+        body {
+            background-color: #96b7f5;
+            font-family: Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            
+        }
+        
+        input {
+            width: 30%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .app-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .app-card {
+            background-color: #000000c6;
+            padding: 15px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            border: 1px solid rgb(248, 244, 244);
+     
+    
+        }
+
+        .app-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            border: 1px solid rgb(248, 244, 244);
+        }
+
+        .install-btn {
+            background-color: #18951a;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: block;
+            
+            margin-top: 10px;
+            
+        }
+        .install-btn:hover{
+            background-color: #043403;
+            color: #ffffff;
+            transform: scale(0.9); /*bach ikbar chwiya*/
+            box-shadow: 0 5px  5px rgba(255, 255, 255, 0.461);
+        }
+        
+        .footer{
+           background-color: black;
+            color: white;
+           padding: 0.5em;
+           display: flex;
+           justify-content: space-between;
+        }
+        
+        .footer-title span{
+            color: #96b7f5;
+            font-style: italic; 
+    
+            font-size: 1em;
+            font-weight: 600 ;
+        }
+
+        .footer-title .span2 {
+            color: #ffffff;
+            font-family: Snell Roundhand, cursive;
+    
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><span>GAME</span>OPOLY</h1>
+        
+         
+        <nav class="navigation"></nav>
+            <a href="indexgames.html" > <i class="fa-solid fa-house"></i> </a>
+        </nav>
+    </header>
+    
+    <section class="main" id="home">
+        
+      <div class="app-container">
+        
+        
+        <div class="app-card">
+            <img src="GTA5.png" alt="GTA 5"/>
+            <h3>GTA 5</h3>
+            <p>Platforms:<i class="fa-brands fa-apple"></i><i class="fa-brands fa-android"></i></p>
+            <a href="https://shorturl.at/fbjm1" class="install-btn">install</a>
+        </div>
+
+        <div class="app-card">
+            <img src="fortnite.png" alt="Fortnite Mobile"/>
+            <h3>Fortnite</h3>
+            <p>Platforms:<i class="fa-brands fa-apple"></i><i class="fa-brands fa-android"></i></p>
+            <a href="https://shorturl.at/fbjm1" class="install-btn">install</a>
+        </div>
+
+        <div class="app-card">
+            <img src="minecraft.webp" alt="Minecraft"/>
+            <h3>Minecraft</h3>
+            <p>Platforms:<i class="fa-brands fa-apple"></i><i class="fa-brands fa-android"></i></p>
+            <a href="https://shorturl.at/fbjm1" class="install-btn">install</a>
+        </div>
+
+        <div class="app-card">
+            <img src="POPPY PLAYTIME.jpg" alt="Poppy Playtime"/>
+            <h3>Poppy Playtime</h3>
+            <p>Platforms:<i class="fa-brands fa-apple"></i><i class="fa-brands fa-android"></i></p>
+            <a href="https://shorturl.at/fbjm1" class="install-btn">install</a>
+        </div>
+
+        <div class="app-card">
+            <img src="fifa22.jpg" alt="FIFA 22"/>
+            <h3>FIFA 22</h3>
+            <p>Platforms:<i class="fa-brands fa-apple"></i><i class="fa-brands fa-android"></i></p>
+            <a href="https://shorturl.at/fbjm1" class="install-btn">install</a>
+        </div>
+
+        <div class="app-card">
+            <img src="SPIDER MAN.webp" alt="Spider-Man"/>
+            <h3>Spider Man</h3>
+            <p>Platforms:<i class="fa-brands fa-apple"></i><i class="fa-brands fa-android"></i></p>
+            <a href="https://shorturl.at/fbjm1" class="install-btn">install</a>
+        </div>
+        <div class="app-card">
+            <img src="bisbal.jpg" alt="FIFA 22"/>
+            <h3>Baseball 9 Mod</h3>
+            <p>Platforms:<i class="fa-brands fa-apple"></i><i class="fa-brands fa-android"></i></p>
+            <a href="https://shorturl.at/fbjm1" class="install-btn">install</a>
+        </div>
+
+        <div class="app-card">
+            <img src="gtasandrias.jpg" alt="Spider-Man"/>
+            <h3>GTA San Andreas</h3>
+            <p>Platforms:<i class="fa-brands fa-apple"></i><i class="fa-brands fa-android"></i></p>
+            <a href="https://shorturl.at/fbjm1" class="install-btn">install</a>
+        </div>
+        <div class="app-card">
+            <img src="gtavice.jpg" alt="Spider-Man"/>
+            <h3>GTA Vice City</h3>
+            <p class="pICON">Platforms:<i class="fa-brands fa-apple"></i><i class="fa-brands fa-android"></i></p>
+            <a href="https://shorturl.at/fbjm1" class="install-btn">install</a>
+        </div>
+        
+     </div>
+    </section>
+    <footer class="footer">
+        <p class="footer-title"><span>GAME</span><span class="span2">OPOLY</span> 	&reg;</p>
+        <div class="social-iconss">
+            
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" ><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+  
+      </footer>
+
+</body>
+</html>
